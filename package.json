@@ -1,0 +1,35 @@
+{
+	"name": "elmish-vite",
+	"version": "1.0.0",
+	"description": "",
+	"main": "Program.fs.js",
+	"type": "module",
+	"scripts": {
+		"restore": "dotnet tool restore",
+		"dev": "dotnet fable watch src --lang ts --run vite",
+		"build": "dotnet fable src --lang ts --run vite build",
+		"preview": "dotnet fable src --lang ts --run vite preview",
+		"fable": "dotnet fable src --lang ts",
+		"watch": "dotnet fable watch src --lang ts",
+		"clean": "dotnet fable clean src --lang ts",
+		"start": "vite",
+		"tsc": "tsc",
+		"fix": "sed -i -e 's@crossorigin src=\"/@crossorigin src=\"@' dist/index.html"
+	},
+	"homepage": "./",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^20.12.9",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.11"
+	},
+	"dependencies": {
+		"@types/react": "^18.3.1",
+		"beercss": "^3.7.12",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"use-sync-external-store": "^1.2.2"
+	}
+}
